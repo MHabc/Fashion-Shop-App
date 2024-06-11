@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">fashionApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_favorite">favorite</string>
+    <string name="nav_history">lịch sử</string>
+    <string name="nav_Settting">Setting</string>
+    <string name="nav_changePassword">thay đổi mật khẩu</string>
+    <string name="nav_chanProfile">thay đổi thông tin người dùng</string>
+    <string name="nav_Signout">Đăng xuất</string>
+    <string name="nav_chat">Chat với shop</string>
+    <string name="nav_address_phone">địa chỉ và số điện thoại</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Open navigation drawer</string>
+</resources>
