@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Name" />
+        <EditText
+            android:id="@+id/itemoldprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="old price" />
+        <EditText
+            android:id="@+id/itemRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating" />
+
+        <EditText
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Description" />
+
+        <EditText
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Price"
+            android:inputType="numberDecimal" />
+
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Item Image" />
+<LinearLayout
+    android:layout_marginStart="30dp"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update " />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/btnAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add " />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete " />
+</LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/adminrev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Other buttons and layout elements -->
+    </LinearLayout>
+
+    <!-- Your existing layout -->
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/danhsachsanpham"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                app:srcCompat="@drawable/btn_1" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Explorer"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardfavorite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                app:srcCompat="@drawable/history_icon" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report"
+                android:layout_marginTop="6dp"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardfabtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/giohang"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/icon_chat" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Đánh giá "
+
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imag"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/btn_4" />
+
+            <TextView
+                android:id="@+id/txtlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="list user"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/btn_4" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="cài đặt"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changePhoneAndAdressActivity">
+
+    <ImageView
+        android:id="@+id/Back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+    <LinearLayout
+
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4DD2D2D2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Địa chỉ chi tiết để liên hệ khi nhận hàng"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16sp"
+            android:background="@drawable/white_background2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/icon_place"></ImageView>
+            <EditText
+                android:id="@+id/address_user"
+                android:layout_marginStart="32dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"></EditText>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Phone"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16sp"
+            android:background="@drawable/white_background2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/btn_4"></ImageView>
+            <EditText
+                android:id="@+id/changephone"
+                android:layout_marginStart="32dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:hint="số điện thoại của người dùng"
+
+                android:layout_height="match_parent"></EditText>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnthaydoi"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="Save Changes"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            style="@android:style/Widget.Button"
+            android:background="@drawable/green_button_bg"
+            android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
